@@ -1,0 +1,198 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>BrainerEdu</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="fontawesome/css/all.css">
+    <link rel="stylesheet" href="dash.css">
+    <script src="dash.js" defer></script>
+</head>
+
+<body>
+    <!--================ SIDE BAR====================-->
+    <div class="sidebar">
+        <div class="top">
+
+            <i class="fa-solid fa-bars" id="btn"></i>
+            <div class="logo">
+                <img src="assets/image/brainer.png" width="40" alt="logo" />
+                <h2>BRAINER<br>EDUCATION</h2>
+            </div>
+        </div>
+        <div class="user">
+            <img src="assets/image/userprofile.png" class="user-img" alt="profile" width="">
+            <p>Selamat Datang,</p>
+            <p>Kaiya</p>
+        </div>
+        <ul class="nav">
+            <li><a class="page-active" href="#dash.html"><i class="fa-solid fa-house"></i><span class="nav-item">Beranda</span></a><span class="tooltip">Beranda</span></li>
+            <li><a href="#aktivitas.html"><i class="fa-solid fa-calendar"></i><span class="nav-item">Aktivitas</span></a><span class="tooltip">Aktivitas</span></li>
+            <li><a href="#riwayat.html"><i class="fa-sharp fa-solid fa-clock"></i><span class="nav-item">Riwayat Belajar</span></a><span class="tooltip">Riwayat Belajar</span></li>
+            <li><a href="#kelas.html"><i class="fa-solid fa-book"></i><span class="nav-item">Kelas</span></a><span class="tooltip">Kelas</span></li>
+            <li><a href="#mentor.html"><i class="fa-solid fa-address-card"></i><span class="nav-item">Mentor</span></a><span class="tooltip">Mentor</span></li>
+            <li><a href="#settings.html"><i class="fa-solid fa-gear"></i><span class="nav-item">Pengaturan</span></a><span class="tooltip">Beranda</span></li>
+        </ul>
+    </div>
+
+    <main>
+        <!--================ HEADER (SEARCH & LOGOUT)====================-->
+        <div class="main-content">
+            <div class="header-main">
+                <nav class="navbar">
+                    <div class="container-fluid">
+                        <form class="d-flex" role="search">
+                            <input class="form-control me-2" style="border-radius: 14px;" type="search" placeholder="Cari" aria-label="Search">
+                            <button class="btn btn-outline-primary" style="border-radius: 14px;" type="submit">Cari</button>
+                        </form>
+                    </div>
+                </nav>
+
+                <div class="logout">
+                    <ul>
+                        <li>
+                            <a href="#"><i class="fa-solid fa-right-from-bracket"></i>&nbsp;<span class="nav-item">Keluar</span></a><span class="tooltip">Keluar</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div><br>
+            <!--================ HERO BANNER ====================-->
+            <div class="main-banner">
+                <div class="hero-banner">
+                    <h1 class="judul-main">BERANDA</h1><br>
+                    <div class="img-banner">
+                        <img src="assets/image/BANNER DASH.jpg" alt="hero banner" width="1000px" height="300px"> <br><br>
+                        <img src="assets/image/BELAJAR ONLINE.png" alt="hero banner" width="1000px" height="300px">
+                    </div>
+                </div>
+                <br><br>
+                <!--================ KELAS REKOMENDASI ====================-->
+                <div class="hero-banner">
+                    <h1 class="judul-main">REKOMENDASI</h1><br>
+                    <div class="card-rec">
+                        <div class="card" style="width: 18rem;">
+                            <img src="assets/image/htmldasar.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <div class="judul-card">
+                                    <h5 class="card-title">HTML Dasar</h5>
+                                    <div class="star">
+                                        <i class="fa-solid fa-star" style="color: #f7e302;"></i>
+                                        <i class="fa-solid fa-star" style="color: #f7e302;"></i>
+                                        <i class="fa-solid fa-star" style="color: #f7e302;"></i>
+                                        <i class="fa-solid fa-star" style="color: #f7e302;"></i>
+                                        <i class="fa-regular fa-star" style="color: #f7e302;"></i>
+                                    </div>
+                                </div>
+                                <p class="card-text"><span class="harga">Rp. 0</span></p>
+                                <a href="#" class="btn btn-primary">Selengkapnya</a>
+                            </div>
+                        </div>
+                        <div class="card" style="width: 18rem;">
+                            <img src="assets/image/uidesign.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <div class="judul-card">
+                                    <h5 class="card-title">UI Design</h5>
+                                    <div class="star">
+                                        <i class="fa-solid fa-star" style="color: #f7e302;"></i>
+                                        <i class="fa-solid fa-star" style="color: #f7e302;"></i>
+                                        <i class="fa-solid fa-star" style="color: #f7e302;"></i>
+                                        <i class="fa-solid fa-star" style="color: #f7e302;"></i>
+                                        <i class="fa-regular fa-star" style="color: #f7e302;"></i>
+                                    </div>
+                                </div>
+                                <p class="card-text"><span class="harga">Rp. 0</span></p>
+                                <a href="#" class="btn btn-primary">Selengkapnya</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-rec2">
+                        <div class="card" style="width: 18rem;">
+                            <img src="assets/image/cssdasar.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <div class="judul-card">
+                                    <h5 class="card-title">CSS Dasar</h5>
+                                    <div class="star">
+                                        <i class="fa-solid fa-star" style="color: #f7e302;"></i>
+                                        <i class="fa-solid fa-star" style="color: #f7e302;"></i>
+                                        <i class="fa-solid fa-star" style="color: #f7e302;"></i>
+                                        <i class="fa-solid fa-star" style="color: #f7e302;"></i>
+                                        <i class="fa-regular fa-star" style="color: #f7e302;"></i>
+                                    </div>
+                                </div>
+                                <p class="card-text"><span class="harga">Rp. 0</span></p>
+                                <a href="#" class="btn btn-primary">Selengkapnya</a>
+                            </div>
+                        </div>
+                        <div class="card" style="width: 18rem;">
+                            <img src="assets/image/toefldasar.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <div class="judul-card">
+                                    <h5 class="card-title">TOEFL Dasar</h5>
+                                    <div class="star">
+                                        <i class="fa-solid fa-star" style="color: #f7e302;"></i>
+                                        <i class="fa-solid fa-star" style="color: #f7e302;"></i>
+                                        <i class="fa-solid fa-star" style="color: #f7e302;"></i>
+                                        <i class="fa-solid fa-star" style="color: #f7e302;"></i>
+                                        <i class="fa-regular fa-star" style="color: #f7e302;"></i>
+                                    </div>
+                                </div>
+                                <p class="card-text"><span class="harga">Rp. 0</span></p>
+                                <a href="#" class="btn btn-primary">Selengkapnya</a>
+                            </div>
+                        </div>
+                    </div>
+                </div><br><br>
+                <!--================ MENTOR REKOMENDASI ====================-->
+                <div class="hero-banner">
+                    <h1 class="judul-main">REKOMENDASI</h1><br>
+                    <div class="card-rec">
+                        <div class="card" style="width: 18rem;">
+                            <img src="assets/image/tiana.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <div class="judul-card">
+                                    <h5 class="card-title">Tiana Evelyn</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card" style="width: 18rem;">
+                            <img src="assets/image/berlian.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <div class="judul-card">
+                                    <h5 class="card-title">Berlian Aura</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card-rec3">
+                    <div class="card" style="width: 18rem;">
+                        <img src="assets/image/ferdi.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <div class="judul-card">
+                                <h5 class="card-title">Ferdi Sampo</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 18rem;">
+                        <img src="assets/image/kiana.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <div class="judul-card">
+                                <h5 class="card-title">Kianna Milen</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div><br><br>
+            </div>
+        </div>
+        </div>
+        </div>
+    </main>
+</body>
+
+
+
+</html>
