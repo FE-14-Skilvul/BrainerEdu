@@ -1,0 +1,40 @@
+.progress-card .percent {
+  position: relative;
+}
+.progress-card svg {
+  position: relative;
+  width: 210px;
+  height: 210px;
+  transform: rotate(-90deg);
+}
+.progress-card svg circle {
+  width: 100%;
+  height: 100%;
+  fill: none;
+  stroke: #f0f0f0;
+  stroke-width: 10;
+  stroke-linecap: round;
+}
+.progress-card svg circle:last-of-type {
+  stroke-dasharray: 625px;
+  stroke-dashoffset: calc(625px - 625px * var(--percent) / 100);
+}
+.progress-card .number {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.progress-card .number h3 {
+  font-weight: 200;
+  font-size: 3.5rem;
+}
+.progress-card .number h3 span {
+  font-size: 2rem;
+}
+.progress-card .title h2 {
+  margin: 25px 0 0;
+}
+.progress-card .card:nth-child(1) svg circle:last-of-type {
+  stroke: #f39c12;
+}
