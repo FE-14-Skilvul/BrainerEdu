@@ -7,51 +7,53 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>DAFTAR</title>
   <link rel="stylesheet" href="/assets/css/daftar.css">
+  <!-- <script src="/assets/js/daftar.js"></script> -->
 </head>
 
 <body>
 
   <div class="center">
     <h1>Registrasi Akun</h1>
-    <form method="post">
+    <form id="form">
+
       <div class="txt_field">
-        <input type="text" placeholder="">
+        <input type="text" id="username" placeholder="Masukkan Username" required>
         <span></span>
-        <label>Nama Awal</label>
+        <label>Username</label>
       </div>
       <div class="txt_field">
-        <input type="text" placeholder="">
-        <span></span>
-        <label>Nama Akhir</label>
-      </div>
-      <div class="txt_field">
-        <input type="text" placeholder="">
+        <input type="email" id="email" placeholder="Masukkan Email" size="30" required>
         <span></span>
         <label>Email</label>
       </div>
       <div class="txt_field">
-        <input type="password" placeholder="">
+        <input type="password" id="password" placeholder="Masukkan Password" required>
         <span></span>
         <label>Password</label>
       </div>
       <div class="txt_field">
-        <input type="password" placeholder="">
+        <input type="password" id="confpassword" placeholder="Masukkan Konfirmasi Password" required>
         <span></span>
         <label>Konfirmasi Password</label>
       </div>
       <div class="txt_field">
-        <input type="text" placeholder="">
+        <input type="text" id="universitas" placeholder="Masukkan Nama Universitas">
         <span></span>
         <label>Universitas</label>
       </div>
       <div class="txt_field">
-        <input type="number" placeholder="">
+        <input type="number" id="no_hp" placeholder="Masukkan Nomor Handphone">
         <span></span>
         <label>No Telepon</label>
       </div>
-      <input type="submit" value="Daftar">
+      <button type="submit">Daftar</button>
+      <!-- <input type="submit" value="Daftar"> -->
     </form>
   </div>
+
+  <script src="/assets/js/daftar.js">
+
+  </script>
 </body>
 
 </html>
