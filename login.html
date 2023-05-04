@@ -1,39 +1,38 @@
 <!DOCTYPE html>
-<!-- Coding By CodingNepal - youtube.com/codingnepal -->
 <html lang="en" dir="ltr">
 
 <head>
-  <meta charset="utf-8">
-  <title>Login</title>
-  <link rel="stylesheet" href="assets/css/login.css">
+    <meta charset="utf-8">
+    <title>Login</title>
+    <link rel="stylesheet" href="assets/css/login.css">
 </head>
 
 <body>
-  <div class="center">
-    <h1>Masuk</h1>
-    <form id="form">
-      <div class="txt_field">
-        <input id="email" type="text" placeholder="Masukkan Email">
-        <span></span>
-        <label>Email</label>
-      </div>
-      <div class="txt_field">
-        <input id="password" type="password" placeholder="Masukkan Password">
-        <span></span>
-        <label>Password</label>
-      </div>
-      <div class="pass">Lupa Password?</div>
-      <!-- <input type="submit" value="Login"> -->
-      <button type="submit"> Login</button>
-      <div class="signup_link">
-        Tidak punya akun?<a href="/daftar.html">Daftar</a>
-      </div>
-    </form>
-  </div>
+    <div class="center">
+        <h1>Masuk</h1>
+        <div class="img-login">
+            <img src="assets/img/imglogin.png" alt="Gambar Login">
+        </div>
+        <form method="post">
+            <div class="txt_field">
+                <input type="text" placeholder="Masukkan Email" name="email">
+                <span></span>
+                <label>Email</label>
+            </div>
+            <div class="txt_field">
+                <input type="password" placeholder="Masukkan Password" name="password">
+                <span></span>
+                <label>Password</label>
+            </div>
+            <div class="pass"><a href="#">Lupa Password?</a></div>
+            <input type="submit" value="Login">
+            <div class="signup_link">
+                Tidak punya akun?<a href="/daftar.html">Daftar</a>
+            </div>
+        </form>
+    </div>
 
-  <script src="/assets/js/login.js">
 
-  </script>
 </body>
 
 </html>
