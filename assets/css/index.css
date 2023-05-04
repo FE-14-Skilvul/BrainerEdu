@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+
 html,
 body {
     font-family: "Poppins";
@@ -7,6 +8,7 @@ body {
     overflow-x: hidden;
     position: relative;
     padding-bottom: 70px;
+
 }
 
 .competition-btn,
@@ -550,6 +552,7 @@ aside #toggle-navbar {
         justify-content: center;
         overflow-x: scroll;
     }
+
     .card-rec2 {
         flex-direction: column;
         align-items: center;
@@ -557,6 +560,7 @@ aside #toggle-navbar {
         justify-content: center;
         overflow-x: scroll;
     }
+
     .card {
         margin: 10px;
         width: 90%;
@@ -581,6 +585,7 @@ aside #toggle-navbar {
         margin-bottom: 50px;
         overflow-x: auto;
     }
+
     .card-rec2 {
         display: flex;
         flex-direction: row;
