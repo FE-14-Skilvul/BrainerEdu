@@ -22,8 +22,17 @@ function handleGetFormData() {
         alert('email atau password salah');
         return false;
     } else {
-        // setCookie("userLogin", findByEmail(email));
-        window.location.href = "/dashboard.html";
+        var protocol = location.protocol;
+        var slashes = protocol.concat("//");
+        var host = slashes.concat(window.location.host);
+
+        // or as you probably should do
+        var host = location.protocol.concat("//").concat(window.location.host);
+
+        // the above is the same as origin, e.g. "https://stackoverflow.com"
+        var host = window.location.origin;
+        setCookie("userLogin", findByEmail(email));
+        window.location.href = host + "/dashboard.html";
     }
 
 }
