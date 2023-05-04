@@ -22,7 +22,7 @@ function handleGetFormData() {
         alert('email atau password salah');
         return false;
     } else {
-        setCookie("userLogin", findByEmail(email));
+        // setCookie("userLogin", findByEmail(email));
         window.location.href = "/dashboard.html";
     }
 
