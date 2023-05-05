@@ -13,25 +13,26 @@
         <div class="img-login">
             <img src="assets/img/imglogin.png" alt="Gambar Login">
         </div>
-        <form method="post">
+        <form id="form">
             <div class="txt_field">
-                <input type="text" placeholder="Masukkan Email" name="email">
+                <input type="text" id="email" placeholder="Masukkan Email" name="email">
                 <span></span>
                 <label>Email</label>
             </div>
             <div class="txt_field">
-                <input type="password" placeholder="Masukkan Password" name="password">
+                <input type="password" id="password" placeholder="Masukkan Password" name="password">
                 <span></span>
                 <label>Password</label>
             </div>
             <div class="pass"><a href="#">Lupa Password?</a></div>
-            <input type="submit" value="Login">
+            <button type="submit"> Login</button>
             <div class="signup_link">
                 Tidak punya akun?<a href="/daftar.html">Daftar</a>
             </div>
         </form>
     </div>
 
+    <script src="/assets/js/login.js"></script>
 
 </body>
 

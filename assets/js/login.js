@@ -21,7 +21,8 @@ function handleGetFormData() {
     if (!isEmailExist(email) || !isPasswordExist(password)) {
         alert('email atau password salah');
         return false;
-    } else {
+    }
+    else {
         setCookie("userLogin", findByEmail(email));
         window.location.href = "/dashboard.html";
     }
