@@ -1,8 +1,7 @@
-
 const api = 'https://64510c9ca3221969115946ad.mockapi.io'
 
 const form = document.getElementById("form");
-form.addEventListener("submit", function (event) {
+form.addEventListener("submit", function(event) {
     event.preventDefault()
 
     const formData = handleGetFormData();
@@ -11,7 +10,7 @@ form.addEventListener("submit", function (event) {
 });
 
 
-const saveData = async (formData) => {
+const saveData = async(formData) => {
     const { email, username, password, universitas, no_hp } = formData
     try {
         const response = await fetch(`${api}/user`, {
@@ -20,7 +19,11 @@ const saveData = async (formData) => {
                 'Content-Type': 'application/json'
             },
             body: JSON.stringify({
-                username, password, universitas, email, no_hp
+                username,
+                password,
+                universitas,
+                email,
+                no_hp
             })
         });
 
@@ -48,7 +51,7 @@ function handleGetFormData() {
 
     if (username.includes(' ')) {
         alert('Username Tidak boleh Menggunakan spasi');
-        return false;// terdapat spasi
+        return false; // terdapat spasi
     }
     if (password != confpassword) {
         alert('Password, dan Konfirmasi Password Tidak Cocok');
