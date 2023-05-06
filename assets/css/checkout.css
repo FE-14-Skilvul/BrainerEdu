@@ -320,3 +320,16 @@ input[type="radio"] {
 .product-detail ul li span {
     font-weight: 400;
 }
+
+.alert {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+
+.show {
+    display: block;
+}
