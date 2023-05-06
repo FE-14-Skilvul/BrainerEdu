@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap');
+
 * {
     box-sizing: border-box;
     padding: 0;
@@ -177,12 +178,12 @@ img {
 }
 
 .purchase-info .btn:first-of-type {
-    background: #256eff;
+    background: #ffffff;
+    color: #256eff
 }
 
 .purchase-info .btn:last-of-type {
-    background: #ffffff;
-    color: #256eff
+    background: #256eff;
 }
 
 .purchase-info .btn:hover {
@@ -221,17 +222,20 @@ img {
         grid-template-columns: repeat(2, 1fr);
         grid-gap: 1.5rem;
     }
+
     .card-wrapper {
         height: 100vh;
         display: flex;
         justify-content: center;
         align-items: center;
     }
+
     .product-imgs {
         display: flex;
         flex-direction: column;
         justify-content: center;
     }
+
     .product-content {
         padding-top: 0;
     }
