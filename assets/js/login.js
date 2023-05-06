@@ -1,3 +1,6 @@
+if (document.cookie != '') {
+    window.location.href = 'dashboard.html'
+}
 const api = 'https://64510c9ca3221969115946ad.mockapi.io'
 let users = []
 const a = (async () => {
