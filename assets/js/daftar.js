@@ -20,7 +20,7 @@ const saveData = async (formData) => {
                 'Content-Type': 'application/json'
             },
             body: JSON.stringify({
-                username, password, universitas, email, no_hp
+                username, password, universitas, email, no_hp, role: 1
             })
         });
 

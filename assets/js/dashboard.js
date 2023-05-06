@@ -1,5 +1,6 @@
 const navbar = document.querySelector('.col-navbar')
 const cover = document.querySelector('.screen-cover')
+const logout = document.getElementById("logout");
 
 const sidebar_items = document.querySelectorAll('.sidebar-item')
 
@@ -9,7 +10,7 @@ function toggleNavbar() {
 }
 
 function toggleActive(e) {
-    sidebar_items.forEach(function(v, k) {
+    sidebar_items.forEach(function (v, k) {
         v.classList.remove('active')
     })
     e.closest('.sidebar-item').classList.add('active')
@@ -23,3 +24,19 @@ setTimeout(() => {
         v.classList.add('running')
     })
 }, 0)
+
+logout.addEventListener("click", function () {
+    // Get all cookies
+    var cookies = document.cookie.split(";");
+
+    // Iterate over cookies and remove them
+    for (var i = 0; i < cookies.length; i++) {
+        var cookie = cookies[i];
+        var eqPos = cookie.indexOf("=");
+        var name = eqPos > -1 ? cookie.substr(0, eqPos) : cookie;
+        document.cookie = name + "=;expires=Thu, 01 Jan 1970 00:00:00 GMT;path=/";
+    }
+    window.location.href = "/";
+    // alert('Berhasil Logout');
+
+});
