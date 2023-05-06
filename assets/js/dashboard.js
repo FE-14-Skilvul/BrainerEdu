@@ -26,7 +26,7 @@ setTimeout(() => {
 }, 0)
 
 logout.addEventListener("click", function () {
-    // Get all cookies
+    // Get all cookiesdsad
     var cookies = document.cookie.split(";");
 
     // Iterate over cookies and remove them
